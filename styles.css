@@ -41,50 +41,6 @@ body {
   transform: translateY(0px);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
-/* 
-.randomColor {
-  position: relative;
-  top: 120px;
-  padding: 5px;
-  background-color: #fff;
-  border: 2px solid #000;
-}
-
-.randomColor:focus {
-  outline: none;
-}
-
-.randomColor:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.randomColor:active {
-  transform: translateY(0px);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.btn-black {
-  position: relative;
-  top: 120px;
-  padding: 5px;
-  background-color: #fff;
-  border: 2px solid #000;
-}
-
-.btn-black:focus {
-  outline: none;
-}
-
-.btn-black:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.btn-black:active {
-  transform: translateY(0px);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-} */
 
 .gridContainer {
   position: absolute;
@@ -101,7 +57,6 @@ body {
 
 .gridCell {
   background-color: #ddd;
-  border: 1px solid #000;
 }
 
 .hovered {

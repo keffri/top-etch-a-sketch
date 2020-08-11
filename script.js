@@ -37,25 +37,6 @@ function clearGrid() {
   });
 }
 
-// function blackBtn() {
-//   let gridCells = document.querySelectorAll(".gridCell");
-//   gridCells.forEach((gridCell) => {
-//     gridCell.addEventListener("mouseover", (e) => {
-//       gridCell.style.backgroundColor = `#e02`;
-//     });
-//   });
-// }
-
-// function randomColors() {
-//   let colorRandom = Math.floor(Math.random() * 16777215).toString(16);
-//   let gridCells = document.querySelectorAll(".gridCell");
-//   gridCells.forEach((gridCell) => {
-//     gridCell.addEventListener("mouseover", (e) => {
-//       gridCell.style.backgroundColor = `#${colorRandom}`;
-//     });
-//   });
-// }
-
 clear.addEventListener("click", clearGrid);
 // btnBlack.addEventListener("click", blackBtn);
 // randomColor.addEventListener("click", randomColors);
