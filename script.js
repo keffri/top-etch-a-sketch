@@ -15,6 +15,7 @@ function makeGrid(size) {
 }
 
 function resizeGrid() {
+  gridContainer.innerHTML = "";
   let size = prompt(
     "Enter the amount of squares you would like on each side(horizontally and vertically)."
   );
