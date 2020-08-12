@@ -68,8 +68,5 @@ body {
 
 .gridCell {
   background-color: #ddd;
-}
-
-.gridBorder {
   border: 1px solid #000;
 }

@@ -15,7 +15,9 @@ function makeGrid(size) {
 }
 
 function resizeGrid() {
-  let size = prompt("Enter the amount of squares you would like on each side.");
+  let size = prompt(
+    "Enter the amount of squares you would like on each side(horizontally and vertically)."
+  );
   if (size < 2) {
     alert("Please enter a higher value.");
     return;
