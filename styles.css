@@ -18,17 +18,17 @@ body {
 .buttons {
   margin: auto;
   width: 600px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .resize,
 .clear,
 .black,
 .random {
-  position: relative;
-  top: 120px;
-  padding: 5px;
   background-color: #fff;
   border: 2px solid #000;
+  padding: 2px;
 }
 
 .resize:focus,
@@ -55,10 +55,6 @@ body {
 }
 
 .gridContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   margin: auto;
   display: grid;
   width: 600px;

@@ -15,23 +15,34 @@ function makeGrid(size) {
 }
 
 function resizeGrid() {
-  gridContainer.innerHTML = "";
   let size = prompt(
     "Enter the amount of squares you would like on each side(horizontally and vertically)."
   );
-  if (size < 2) {
+  if (size === "" || size === null) {
+    alert("Please enter a  value.");
+  } else if (size < 2) {
     alert("Please enter a higher value.");
-    return;
   } else if (size > 100) {
-    alert("Please enter a lower value.");
-    return;
+    alert("Please enter a lower value");
+  } else {
+    let cells = Array.from(gridContainer.childNodes);
+    for (let i = 0; i < cells.length; i++) {
+      gridContainer.removeChild(cells[i]);
+    }
+
+    // for (let i = gridContainer.childNodes.length - 1; i >= 0; i--) {
+    //   gridContainer.removeChild(gridContainer.childNodes[i]);
+    // }
+
+    // gridContainer.innerHTML = "";
+
+    clearGrid();
+    makeGrid(size);
+    let gridCells = document.querySelectorAll(".gridCell");
+    gridCells.forEach((gridCell) => {
+      gridCell.addEventListener("mouseover", blackColor);
+    });
   }
-  clearGrid();
-  makeGrid(size);
-  let gridCells = document.querySelectorAll(".gridCell");
-  gridCells.forEach((gridCell) => {
-    gridCell.addEventListener("mouseover", blackColor);
-  });
 }
 
 // CLEAR GRID //
