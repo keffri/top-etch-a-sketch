@@ -15,15 +15,17 @@ function makeGrid(size) {
 }
 
 function resizeGrid() {
-  let size = prompt(
-    "Enter the amount of squares you would like on each side(horizontally and vertically)."
+  let size = Math.round(
+    prompt(
+      "Enter the amount of squares you would like on each side(horizontally and vertically)."
+    )
   );
-  if (size === "" || size === null) {
-    alert("Please enter a  value.");
+  if (size === 0) {
+    alert("Please enter a value.");
   } else if (size < 2) {
-    alert("Please enter a higher value.");
+    alert("Please enter a higher value. (2 - 100)");
   } else if (size > 100) {
-    alert("Please enter a lower value");
+    alert("Please enter a lower value. (2 - 100)");
   } else {
     let cells = Array.from(gridContainer.childNodes);
     for (let i = 0; i < cells.length; i++) {
@@ -81,6 +83,12 @@ function colorRandom() {
     gridCell.removeEventListener("mouseover", blackColor),
       gridCell.addEventListener("mouseover", randomColor);
   });
+}
+
+// COLOR DARK
+
+function darkColor() {
+  const currentColor = this.style.backgroundColor;
 }
 
 resize.addEventListener("click", resizeGrid);
